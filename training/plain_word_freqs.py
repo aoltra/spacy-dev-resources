@@ -28,7 +28,7 @@ def main(input_glob, out_loc, workers=4):
     """
     Main function
     """
-    if isinstance(workers) is str:
+    if isinstance(workers, str):
         print("Error: if you are using wildcards, please use quotation marks.\
               \nExample: python plain_word_freqs \"./corpus/*.txt\" freqs.txt")
         return
